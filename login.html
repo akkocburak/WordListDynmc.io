@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giriş Yap - Kelime Listem</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <style>
+    body { display: flex; align-items: center; justify-content: center; height: 100vh; background: #fafbfc; }
+    .login-box { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 2rem 2.5rem; text-align: center; }
+    .login-title { font-size: 2rem; margin-bottom: 1.2rem; }
+    .login-desc { color: #555; margin-bottom: 2rem; }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <div class="login-title">Kelime Listem</div>
+    <div class="login-desc">Devam etmek için Google ile giriş yap</div>
+    <div id="g_id_onload"
+         data-client_id="554939963602-lhms59khlmetckfh8ln3f69rihq57ahg.apps.googleusercontent.com"
+         data-context="signin"
+         data-ux_mode="popup"
+         data-callback="handleCredentialResponse"
+         data-auto_prompt="false">
+    </div>
+    <div class="g_id_signin"
+         data-type="standard"
+         data-shape="pill"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-size="large"
+         data-logo_alignment="left">
+    </div>
+  </div>
+  <script>
+    function handleCredentialResponse(response) {
+      // Tokenı localStorage'a kaydet ve index.html'e yönlendir
+      localStorage.setItem('google_id_token', response.credential);
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html> 
