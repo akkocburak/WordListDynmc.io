@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelime Listem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Kelime Listem</h1>
+      <div class="profile-icon">
+        <svg height="40" viewBox="0 0 24 24" width="40" fill="#1976d2"><circle cx="12" cy="8" r="4"/><path d="M12 14c-5 0-8 2.5-8 4v2h16v-2c0-1.5-3-4-8-4z"/></svg>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="welcome-section">
+      <h2>Hoş geldin!</h2>
+      <div class="add-word-box">
+        <h3>Yeni Kelime Ekle</h3>
+        <input type="text" id="english-word" placeholder="İngilizce Kelime">
+        <input type="text" id="turkish-meaning" placeholder="Türkçe Anlam" disabled>
+        <button id="add-word-btn">Ekle</button>
+      </div>
+    </section>
+    <section class="word-list-section">
+      <h3>Kelimelerim</h3>
+      <div class="table-responsive">
+        <table id="word-table">
+          <thead>
+            <tr>
+              <th>İngilizce</th>
+              <th>Türkçesi</th>
+              <th>Sesli Oku</th>
+              <th>Sil</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Kelimeler buraya eklenecek -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html> 

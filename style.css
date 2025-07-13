@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fafbfc;
+  color: #222;
+}
+header {
+  background: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0.5rem 0;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.profile-icon {
+  display: flex;
+  align-items: center;
+}
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.welcome-section {
+  margin-bottom: 2rem;
+}
+.add-word-box {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 1.5rem;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+.add-word-box h3 {
+  margin-top: 0;
+}
+.add-word-box input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+.add-word-box button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #198754;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.add-word-box button:hover {
+  background: #157347;
+}
+.word-list-section {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 1.5rem;
+}
+.word-list-section h3 {
+  margin-top: 0;
+}
+.table-responsive {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+th, td {
+  padding: 0.8rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+th {
+  background: #f3f3f3;
+  font-weight: bold;
+}
+td button {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+td button:hover {
+  background: #b52a37;
+}
+.speaker-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: #1976d2;
+  display: flex;
+  align-items: center;
+}
+.speaker-btn:active {
+  color: #0d47a1;
+}
+@media (max-width: 600px) {
+  main {
+    margin: 1rem 0;
+    padding: 0 0.2rem;
+  }
+  .add-word-box, .word-list-section {
+    padding: 1rem 0.5rem;
+  }
+  th, td {
+    padding: 0.5rem 0.2rem;
+    font-size: 0.98rem;
+  }
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+} 
