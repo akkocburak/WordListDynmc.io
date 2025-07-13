@@ -13,7 +13,7 @@ const userNameSpan = document.getElementById('user-name');
 // Google API ve Sheets ayarları
 const CLIENT_ID = '554939963602-lhms59khlmetckfh8ln3f69rihq57ahg.apps.googleusercontent.com';
 const SHEET_ID = '12TKClJTECaIrhB4lnRkoMUMK3JEcNgu2lHewRcU22Ws';
-const API_KEY = '';
+const API_KEY = 'AIzaSyAwE6mF4hHlt0MHQS13c7WTwwaiUzUZKLk';
 const DISCOVERY_DOCS = [
   'https://sheets.googleapis.com/$discovery/rest?version=v4'
 ];
